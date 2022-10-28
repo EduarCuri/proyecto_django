@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from AppCoder.views import *
+from blog.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,6 @@ urlpatterns = [
     path('primer_template/', primer_template),
     path('segundo_template/<nombres>/<apellidos>/<carrera>', segundo_template),
     path('mostrar_familiares/', monstrar_familiares),
+    path('mostrar_index/', index),
     
 ]
